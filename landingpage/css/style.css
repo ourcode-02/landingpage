@@ -17,17 +17,106 @@
  */
 
 html,
+
+.our-services {
+  margin-top:  50px;
+}
+
+img.imag-1 {
+    width: 421px;
+}
+.flip-container {
+  -webkit-perspective: 1000;
+  margin: 0 auto 60px auto;
+  width: 320px;
+  height: 200px;
+  border-radius: 15px;
+  cursor:pointer;
+}
+
+.flip-container:hover .flipper {
+  -webkit-transform: rotateY(180deg);
+  cursor:pointer;
+}
+.flip-container.hover .flipper {
+  -webkit-transform: rotateY(180deg);
+  cursor:pointer;
+}
+
+.front {
+  width: 320px;
+  height: 315px;
+  border-radius: 15px;
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.front h3 {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.front img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.back {
+  width: 320px;
+  height: 315px;
+  border-radius: 15px;
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotateY(180deg);
+  text-align: center;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.back h3 {
+  margin-top: 20px;
+}
+
+.back p {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  margin-right:15px;
+}
+
+.flipper {
+  -webkit-transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  position: relative;
+}
+
+i.fa.fa-podcast {
+    COLOR: white;
+    font-size: 49px;
+    margin-left: 132px;
+    margin-top: 63px;
+}
 body {
     width: 100%;
     height: 100%;
     font-family: "Open Sans",sans-serif;
     font-size:14px;
 }
+
 .media-ion{
 	    color: #161615;
     padding-right: 27px;
     padding-left: 12px;
-    margin-top: 61px;
+    margin-top: 20px;
 }
 .end-ion{
 color: white;
@@ -39,7 +128,7 @@ color: white;
 .text-block {
     position: absolute;
     right: 86px;
-    top: 133px;
+    top: 28px;
     background-color: white;
     color: white;
     padding-right: -4px;
@@ -136,6 +225,12 @@ p.company {
     text-align: center;
     width: 55px;
 }
+h3.row-edit {
+    margin-top: -38px;
+}
+p.text-edit {
+    margin-bottom: 38px;
+}
 .iconfont2 {
    background: #fff none repeat scroll 0 0;
     border: 1px solid #fff;
@@ -145,7 +240,7 @@ p.company {
     float: left;
     font-size: 28px;
     height: 55px;
-    margin-top: 92px;
+    margin-top: 43px;
     padding: 12px;
     text-align: center;
     width: 55px;
@@ -235,7 +330,8 @@ a:hover {
     padding: 0;
 }
 .navbar-default {
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+   
+	    background: rgb(28 24 24) none repeat scroll 0 0;
     border: medium none;
     transition: all 0.35s ease 0s;
     -webkit-transition: all 0.35s ease 0s;
@@ -266,6 +362,7 @@ nav.affix-top {
     border-radius: 5px;    
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
+	  
 }
 .navbar-default .navbar-nav > li > a:focus, 
 .navbar-default .navbar-nav > li > a:hover {
@@ -312,10 +409,14 @@ header .header-content {
 }
 .header-content h3 {
     margin-bottom: 28px;
-    color: #ff4c00;
-	font-family: "Oswald";
+    color: #705050;
+    font-family: "Oswald";
+    background: white;
+    border-radius: 50px;
+    width: 50%;
+    padding: 3px;
+margin-left: 24%;}
 
-}
 .header-content p {
     color: #ddd;
     font-size: 16px;
@@ -353,6 +454,7 @@ header .header-content {
     padding: 22px;
     position: relative;
     z-index: 99;
+	
 }
 .btn-ornge .hbtn {  
     border-radius: 20px;
@@ -368,6 +470,13 @@ header .header-content {
 .btn-ornge:hover .hbtn {
     background: #fff none repeat scroll 0 0;   
     width: 100%;    
+}
+textarea.form-control {
+    height: 46px;
+    border-radius: 55px;
+    padding-left: 22px;
+    padding-top: 12px;
+}
 }
 
 /*-------- about css --------------*/
@@ -435,14 +544,15 @@ header .header-content {
     padding: 60px 0 0px;
     position: relative;
     width: 100%;
+	margin-top: 115px;
 }
 #contact .btn-block {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: 1px solid;
-    border-radius: 3px;
+    border-radius: 40px;
     display: block;
 	margin-bottom: 50px;
-    width: 150px;
+    width: 90px;
      transition: all .3s ease 0s;
     -webkit-transition: all .3s easen 0s;
      -moz-transition: all .3s ease 0s;
@@ -452,9 +562,14 @@ header .header-content {
 	-webkit-transform: skewY(5.5deg);
 	 -moz-transform: skewY(5.5deg);
 }
+img.logo-img {
+    width: 128px;
+}
+
 #contact .btn-block:hover {
     background: orangered none repeat scroll 0 0;
      border: 1px solid #666;
+	     border-radius: 50px
      color:#fff;
       transition: all .3s ease 0s;
     -webkit-transition: all .3s easen 0s;
@@ -464,7 +579,7 @@ header .header-content {
     background-color: #fff;
     background-image: none;
     border: 1px solid #666;
-    border-radius: 4px;
+    border-radius: 54px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
     color: #555;
     display: block;
@@ -751,8 +866,9 @@ height:272px;
     height:300px;
 }
 .header-content h2 {
-    font-size: 22px;
+   
     margin-bottom: 22px;
+	font-size: 17px !important;;
 }
 .header-content h3 {
     color: #ff4c00;
@@ -776,9 +892,7 @@ height:272px;
 .navbar-collapse {
     background: #ff4c00;
 }
-.textcenter.animated img {
-    width: 50% !important;
-}
+.
 #about {
     padding: 80px 0;
 }
@@ -833,6 +947,10 @@ height:272px;
 .header-content h3 {  
     font-size: 18px;
     margin-bottom: 11px;
+}
+.modal-dialog {
+    width: 421px;
+    
 }
 .header-content p {
     color: #ddd;
@@ -921,9 +1039,12 @@ height:272px;
     margin-bottom: 22px;
 }
 .header-content h3 {
-    color: #ff4c00;
-    font-size: 15px;
+    color: #f30fad;
+    font-size: 16px !important;
     margin-bottom: 8px;
+    background: white;
+    border-radius: 50px;
+    padding: 12px;
 }
 .header-content p {
     color: #ddd;
@@ -942,9 +1063,7 @@ height:272px;
 .navbar-collapse {
     background: #ff4c00;
 }
-.textcenter.animated img {
-    width: 50% !important;
-}
+
 #about {
     padding: 80px 0;
 }
@@ -1030,15 +1149,193 @@ height:272px;
     right: 0;
 }
 .iconfont2 {
-    margin-top: 12px;
+    margin-top: 5px;
 }
 .textleft {
     margin-top: 5px;
 }
-.iconfont {
-    margin-top: 12px;
-}
+
 .textright {
     margin-top: 5px;
+}
+.iconfont {
+    background: #fff none repeat scroll 0 0;
+    border: 11px solid #fff;
+    border-radius: 54%;
+    box-shadow: 6px 0px 6px #eee;
+    color: #ff4c00;
+    float: right;
+    font-size: 21px;
+    height: 37px;
+    margin-top: 44px;
+    padding: 0px;
+    text-align: center;
+    width: 52px;
+    padding-top: 1px;
+    padding-bottom: 24px;
+}
+.iconfont2 {
+   background: #fff none repeat scroll 0 0;
+    border: 1px solid #fff;
+    border-radius: 47%;
+    box-shadow: -6px 2px 5px #eee;
+    color: #ff4c00;
+    float: left;
+    font-size: 25px;
+    height: 35px;
+    margin-top: 31px;
+    /* padding: 12px; */
+    text-align: center;
+    width: 40px;
+    padding-left: 15px;
+    padding-right: 37px;
+    padding-top: 16px;
+    padding-bottom: 37px;
+}
+p.text-edit {
+    margin-bottom: 20px;
+}
+h3.row-edit {
+    margin-top: -20px;
+}
+
+.text-block {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    background-color: white;
+    color: white;
+    padding-right: -4px;
+}
+img.logo-img {
+    width: 116px;!important
+}
+.modal-dialog {
+    width: 304px !IMPORTANT;
+    margin-left: 27px;
+    margin-top: 39px;
+}
+.headding h2 {
+    color: #ff4c00;
+    margin-bottom: 20px;
+    position: relative;
+    font-family: "Oswald";
+	font-size: 21px;
+}
+.headding h2::before {
+      background: #555 none repeat scroll 0 0;
+    content: "";
+    height: 1px;
+    left: 30%;
+    position: absolute;
+    top: 27px;
+    width: 123px;
+}
+img.imag-1 {
+    width: 333px;
+}
+.company-2{
+	font-size: 21px;
+    text-align: center;
+}
+.company-3{
+	font-size: 19px;
+    text-align: center;
+}
+p.company {
+    font-size: 14px;
+    text-align: justify;
+    color: #3c3131;
+    word-spacing: 1px;
+}
+.text-block {
+       position: absolute;
+    right: 82px;
+    top: 36px;
+    background-color: white;
+    color: white;
+    width: 165px;
+}
+.media-ion {
+    color: #161615;
+    padding-right: 11px;
+    padding-left: 8px;
+    margin-top: 46px;
+}
+h3.row-edit {
+    margin-top: 29px;
+}
+p.text-edit {
+    margin-bottom: 25px;
+}
+.top-heading{
+	
+}
+.header-content h3 {
+    color: #f30fad;
+    font-size: 16px !important;
+    margin-bottom: 8px;
+    background: white;
+    border-radius: 50px;
+    padding: 12px;
+}
+.header-content p {
+    color: #ddd;
+    font-size: 16px;
+    margin-bottom: 28px;
+    font-family: "Oswald";
+    font-size: 28px;
+}
+
+element.style {
+}
+p.web-contact {
+    color:#f30fad;
+    font-size: 13px !important;
+    margin-bottom: -1px;
+    font-family: "Oswald";
+    font-size: 28px;
+    background: #f0f1dee3;
+    border-radius: 69px;
+    width: 115px;
+    padding: 4px;
+}
+.icon-box-2{
+	font-size:23px !important;
+}
+.icon-box{
+	
+}
+.front {
+  width: 320px;
+  height: 241px;
+  border-radius: 15px;
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.back {
+  width: 320px;
+  height: 241px;
+  border-radius: 15px;
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotateY(180deg);
+  text-align: center;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+#contact {
+    background: #333 none repeat scroll 0 0;
+    color: #fff;
+    padding: 60px 0 0px;
+    position: relative;
+    width: 100%;
+	margin-top: 8px;
 }
 }
