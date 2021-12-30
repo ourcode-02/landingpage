@@ -1,500 +1,1029 @@
+<?php include('connection.php'); ?>
 <!DOCTYPE html>
-<?php
-$phone="+91 76480 08525";
-$email ="prisasoftsolutions@gmail.com";
-?>
-<html lang="en">
-<head>
-<title>Software company</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+<html lang="zxx">
+	<head>
+	<!-- Title Tag  -->
+		<title> Home | <?php echo $projectname;?> </title>
+		<base href="<?php echo $projectname;?>">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- =============== Bootstrap Core CSS =============== -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <!-- =============== Google fonts =============== -->
-    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-	<!-- =============== fonts awesome =============== -->
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <!-- =============== Plugin CSS =============== -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
-    <!-- =============== Custom CSS =============== -->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <!-- =============== Owl Carousel Assets =============== -->
-    <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link href="owl-carousel/owl.theme.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-	<!-- add fav icon-->
-	<link rel="apple-touch-icon" sizes="180x180" href="assets\images\favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="img\favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="img\favicon/favicon-16x16.png">
-<link rel="manifest" href="img\favicon/site.webmanifest">
-<link rel="mask-icon" href="img\favicon/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#603cba">
-<meta name="theme-color" content="#ffffff">
-</head>
-
-<body>
-<div id="myModal" class="modal fade">
-    <div class="modal-dialog " style="width:421px;">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Contact us</h5>
-                <span type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></span>
+		
 				
-            </div>
-            <div class="modal-body">
-                <p></p>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" style="border-radius: 60px;
-    padding: 24px;" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" style="border-radius: 60px;
-    padding: 24px;" placeholder="Email Address">
-                    </div>
-     <input type="submit" class="btn callbtn" value="submit" style="color:white;background:#1298f7;">
-					 <button type="button" class="btn btn-secondary"  style="border-radius: 50px;
-    color: white;
-    background:#dd0f2c;"data-dismiss="modal">Close</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-    <!-- =============== Preloader =============== -->
-    <div id="preloader">
-        <div id="loading">
-        </div>
-    </div>
-    <!-- =============== nav =============== -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Logo">
-                    </a>
-                </div>
+<meta name="description" content="Prisa Soft Solutions is a Best Website Designing Company , SEO Agency &amp; Digital Marketing Company in Raipur (CG). Top SEO  provider service in Raipur Chhattisgarh. ☎ (+91) 76480 08525."/>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
 
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a class="page-scroll" href="#home">Home</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#about">About</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#service">sevice</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#work">our work</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- =============== navbar-collapse =============== -->
 
-            </div>
-        </div>
-        <!-- =============== container-fluid =============== -->
-    </nav>
-    <!-- =============== header =============== -->
-    <header>
-		<!-- =============== container =============== -->
-        <div class="container" id="home">
-            <div class="header-content row">
-                <div class="col-xs-12 col-sm-5 col-md-5">
-                    <h2 class="wow bounceIn animated" data-wow-delay=".40s" style="font-size: 38px;
-    font-family: system-ui;
-}">Creative website development & software</h2>
-                    <h3 class="wow bounceIn animated" data-wow-delay=".50s" style="font-size: 38px;
-    font-family: system-ui;
-}">For Your Increase Business</h3>
-                    <p class="wow bounceIn animated" data-wow-delay=".60s" style="    font-size: 21px;
-    font-family: 'Oswald';color:white;">Our company create   website , software application ,mobile application,graphic dedign,logo degine, make flyers. </p>
-                </div>
-                <div class="col-xs-12 col-sm-7 col-md-7 wow slideInLeft animated">
-                   <div class="row">
-				   <div class="col-lg-6 icon-box text-center">
-				   <i class="fa fa-globe" style="font-size: 34px;"aria-hidden="true"></i>
-				   <p class="h2">Web Development</p>
-				   </div>
-				   <div class="col-lg-6 icon-box text-center">
-				   <i class="fa fa-mobile"  style="font-size: 34px;" aria-hidden="true"></i>
-				     <p class="h2">Mobile Applications</p>
-				   </div>
-				   <div class="col-lg-6 icon-box text-center">
-				   <i class="fa fa-volume-up"style="font-size: 34px;" aria-hidden="true"></i>
-				      <p  class="h2">Digital Marketing</p>
-				   </div>
-				   <div class="col-lg-6 icon-box text-center">
-				   <i class="fa fa-desktop"style="font-size: 34px;" aria-hidden="true"></i>
-				    <p  class="h2">software Development</p>
-				   </div>
-                </div>
-            </div>
-        </div>
-		<!-- =============== container end =============== -->
-    </header>
-    <!-- =============== About =============== -->
-    <section id="about" class="">
-		<!-- =============== container =============== -->
-		<h2 class="text-center" style="color: #0c0b0b;
-    margin-bottom: 40px;">About Us</h2>
-        <div class="container" >
 		
-            <span class="angle2"></span>
-            <span class="angle"></span>
-			
-            <div class="row">
-                <div class="col-xs-12 col-lg-5 col-sm-7 col-md-2 wow fadeInLeft animated" data-wow-delay=".5s">
-                    <h2>Our company information</h2>					
-<img src="img/web.png" alt="image">					
-                  </div>
-                  <div class="col-xs-12  col-lg-7 col-sm-6 col-md-8 wow fadeInRight animated" data-wow-delay=".5s">
-                  <h3> We Create,Design and Make it Real</h3> 
-                  <br>
-                    <p class="company">Are you looking for the best Software Development, Web Design & Development, Mobile App Development and Digital Marketing company in Bangalore, India? Then you are the right place. We at Techasoft, craft innovative products and provide various IT software solutions for any size of business / organization. We rank at top software development company in Bangalore. Our team of expert web and software developers in Bangalore work together to deliver the best on time.</p>
-                  </div>     
-            </div>
-        </div>   
-		<!-- =============== container end =============== -->		
-    </section>
-    <!-- =============== how it works =============== -->
-    <section id="service" class="parallax">
-	<!-- =============== container =============== -->
-    <div class="container">
-     <span class="angle2"></span>
-    <span class="angle"></span>
-     <div class="row">
+<meta name="keywords" content="Top Website designing company,Top seo service agency Best Website designing company,  SEO Company in Raipur,Best Digital Marketing solution service ,Social media services,logo design,brochure,bulk sms" />
 
-       <div class="col-xs-12 col-sm-12 col-md-12 wow bounceIn animated headding" data-wow-delay=".5s">
-           <h2>service</h2>
-                  </div>
+  
 
-      <div class="col-xs-12 col-sm-4 col-md-4">
-         <div class="row">     
-          <div class="col-xs-10 col-sm-10 col-md-10 wow fadeInLeft animated textright" data-wow-delay=".5s">
-            <h3>Web Development</h3>
-              <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum.</p>     
-          </div>
-            <div class="col-xs-2 col-sm-2 col-md-2 wow fadeInRight animated" data-wow-delay=".5s">
-				<i class="fa fa-desktop iconfont" aria-hidden="true"></i>
-          </div>    
-        </div>
-        <div class="row"> 
-         <div class="col-xs-10 col-sm-10 col-md-10 wow fadeInLeft animated textright" data-wow-delay=".6s">
-            <h3>Mobile Application Development</h3>
-              <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum.</p>     
-          </div>
-            <div class="col-xs-2 col-sm-2 col-md-2 wow fadeInRight animated" data-wow-delay=".6s">
-                			<i class="fa fa-mobile  iconfont" aria-hidden="true"></i>
-          </div>     
-        </div>
-        <div class="row">            
-         <div class="col-xs-10 col-sm-10 col-md-10 wow fadeInLeft animated textright" data-wow-delay=".7s">
-            <h3>Software Development</h3>
-              <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum.</p>     
-          </div>
-          <div class="col-xs-2 col-sm-2 col-md-2 wow fadeInRight animated" data-wow-delay=".7s">
-                <i class="fa fa-film iconfont"></i>
-          </div>         
-           
-        </div>        
-      </div>
+<meta name="document-rating" content="Safe for Kids" />
+<meta name="Expires" content="never" />
+<meta name="robots" content="Index,Follow" />
 
-      <div class="col-xs-12 col-sm-4 col-md-4 wow bounceIn animated textcenter" data-wow-delay=".4s">
+<meta name="State" content="Raipur" />
+<meta name="City" content="New Raipur" />
 
-<img src="img/slide-bg.png" alt="image" />
-  <div class="text-block">
-<form>
-<h4 style="color:black;margin-bottom:48px;">Keep In Touch</h4>
-                    <div class="form-group">
-                        <input type="text" class="form-control" style="border-radius: 60px;
-    padding: 24px;" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" style="border-radius: 60px;
-    padding: 24px;" placeholder="Email Address">
-                    </div>
-     <input type="submit" class="btn callbtn" value="submit">
-	<div class="social-media">
-<a href="https://www.facebook.com/Prisa-softsolutions-100321075161048" target="_blank"><i class="fa fa-facebook media-ion"  aria-hidden="true"></i></a>
-		<a href="https://wa.me/7648008525" target="_blank"><i class="fa fa-whatsapp media-ion"  aria-hidden="true"></i></a>
-		<a href="https://www.instagram.com/prisasoftsolutions/" target="_blank"><i class="fa fa-instagram media-ion"aria-hidden="true"></i></a>
-		
-		<a href="tel:<?php echo $phone;?>"><i class="fa fa-phone media-ion"  aria-hidden="true"></i></a>
-                </div>
-				</form>
-  </div>
-      </div>  
-         
-      <div class="col-xs-12 col-sm-4 col-md-4">
-         <div class="row">         
-          <div class="col-xs-2 col-sm-2 col-md-2 wow fadeInLeft animated" data-wow-delay=".5s">
-                <i class="fa fa-android iconfont2"></i>
-          </div>    
-          <div class="col-xs-10 col-sm-10 col-md-10 wow fadeInRight animated textleft" data-wow-delay=".5s">
-            <h3>E-Commerce Development</h3>
-              <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum.</p>     
-          </div>
-           
-        </div>
-        <div class="row">    
-        <div class="col-xs-2 col-sm-2 col-md-2 wow fadeInLeft animated" data-wow-delay=".6s">
-                
-				<i class="fa fa-lightbulb-o iconfont2" aria-hidden="true"></i>
-          </div>          
-          <div class="col-xs-10 col-sm-10 col-md-10 wow fadeInRight animated textleft" data-wow-delay=".6s">
-            <h3>Search Engine Optimization</h3>
-              <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum.</p>     
-          </div>
-          
-        </div>
-        <div class="row">    
-        <div class="col-xs-2 col-sm-2 col-md-2 wow fadeInLeft animated" data-wow-delay=".7s">
-                <i class="fa fa-users iconfont2"></i>
-          </div>          
-          <div class="col-xs-10 col-sm-10 col-md-10 wow fadeInRight animated textleft" data-wow-delay=".7s">
-            <h3>Digital Marketing</h3>
-              <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum.</p>     
-          </div>
-           
-        </div>        
-      </div>
-    </div>
-    </div>   
-	<!-- =============== container end =============== -->	
-    </section>
-    <!-- =============== Screenshots =============== -->
-    <section id="work" class="">
-	<!-- =============== container =============== -->
-    <div class="container">
-    <span class="angle2"></span>
-    <span class="angle"></span>
-     <div class="row">
-
-       <div class="col-xs-12 col-sm-12 col-md-12 wow bounceIn animated headding" data-wow-delay=".1s">
-           <h2>Our <span>work</span></h2>
-           
-       </div>
-
-      <div class="col-xs-12 col-sm-12 col-md-12">
-         <div class="row">     
-          <div class="col-xs-12 col-sm-12 col-md-12 wow zoomIn animated textright" data-wow-delay=".1s">           
-               <div class="span12">
-
-                      <div id="owl-demo" class="owl-carousel">
-                        <div class="item">
-                            <div class="imghover" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><img src="img/owl1.jpg" alt="Owl Image">         
-                            <div class="hover-bg"><i class="fa fa-camera camera"></i></div>                 
-                            </div> 
-                        </div>
-                        <div class="item">
-                            <div class="imghover" data-toggle="modal" data-target="#exampleModa2" data-whatever="@mdo">
-                            <img src="img/owl2.jpg" alt="Owl Image">
-                             <div class="hover-bg"><i class="fa fa-camera camera"></i></div>                 
-                            </div>
-                        </div>
-                       <div class="item">
-                            <div class="imghover" data-toggle="modal" data-target="#exampleModa3" data-whatever="@mdo">
-                            <img src="img/owl3.jpg" alt="Owl Image">
-                             <div class="hover-bg"><i class="fa fa-camera camera"></i></div>                 
-                            </div>
-                        </div> 
-                        <div class="item">
-                            <div class="imghover" data-toggle="modal" data-target="#exampleModa4" data-whatever="@mdo">
-                            <img src="img/owl4.jpg" alt="Owl Image">
-                             <div class="hover-bg"><i class="fa fa-camera camera"></i></div>                 
-                            </div>
-                        </div>
-                      </div>              
-                    </div>     
-                      
-        </div>     
-          <!-- =============== popup large image =============== -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-          <div class="modal-dialog" role="document">
-            <img src="img/owl1.jpg" alt="Owl Image">
-          </div>
-         </div>
-
-         <div class="modal fade" id="exampleModa2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe2">
-          <div class="modal-dialog" role="document">
-            <img src="img/owl2.jpg" alt="Owl Image">
-          </div>
-         </div>
-         
-         <div class="modal fade" id="exampleModa3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe3">
-          <div class="modal-dialog" role="document">
-            <img src="img/owl3.jpg" alt="Owl Image">
-          </div>
-         </div>
-         
-         <div class="modal fade" id="exampleModa4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabe4">
-          <div class="modal-dialog" role="document">
-            <img src="img/owl4.jpg" alt="Owl Image">
-          </div>
-         </div>
-		 <!-- =============== popup large image end =============== -->
-      </div>
-      
-    </div>
-    </div>      
-	</div><!-- =============== container end =============== -->
-    </section>
-    <!-- =============== Price =============== -->
-        </section>
-    <!-- =============== Contact =============== -->
-    <section id="contact">
-	<!-- =============== container =============== -->
-		<div class="container">
-			    <div class="row">
-                 <div class="col-xs-12 col-sm-12 col-md-12 wow bounceIn animated headding" data-wow-delay=".1s">
-                   <h2>Contact <span>Us</span></h2><br/>
-               </div>
-
-
-			</div>
-
-			<div class="row">
-
-				<div class="col-xs-12 col-sm-4 col-md-4 wow bounceIn animated" data-wow-delay=".1s">
-
-					<form id="myform" method="post" action="insert.php">
-						<div class="ajax-hidden">
-							<div class="form-group wow fadeInUp animated">
-								<label for="name" class="sr-only">Name</label>
-								<input type="text" placeholder="Name" name="name" class="form-control" id="name">
-							</div>
-
-							<div data-wow-delay=".1s" class="form-group wow fadeInUp animated">
-								<label for="email" class="sr-only">Email</label>
-								<input type="email" placeholder="E-mail" name="email" class="form-control" id="email">
-							</div>
-
-							<div data-wow-delay=".2s" class="form-group wow fadeInUp animated">
-								<textarea placeholder="Message" rows="7" name="message" id="message" class="form-control"></textarea>
-							</div>
-
-							<input data-wow-delay=".3s" class="btn btn-sm btn-block wow fadeInUp animated"  class="btn" value ="send" id="submit"type="submit">
-						</div>
-						<div class="ajax-response"></div>
-					</form>
-
-				</div>
-                <div class="col-xs-12 col-sm-4 col-md-4 wow bounceIn animated map" data-wow-delay=".5s">
-
-					  <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6508922.473104964!2d-123.76275651635396!3d37.19583981824279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sCalifornia%2C+United+States!5e0!3m2!1sen!2sin!4v1450994260631" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-				</div>
-                 <div class="col-xs-12 col-sm-4 col-md-4 wow bounceIn animated" data-wow-delay=".6s">
-
-					  <section id="text-15" class="widget widget_text">
-                         <h3 class="widget-title">For more enquiry</h3><br>
-                
-                        <p>Mobile:<?php echo $phone;?><br>
-                        E-mail: <a href="#"><?php echo $email;?></a></p>
-						<div class="social-media">
-<a href="https://www.facebook.com/Prisa-softsolutions-100321075161048" target="_blank"><i class="fa fa-facebook end-ion"  aria-hidden="true"></i></a>
-		<a href="https://wa.me/7648008525" target="_blank"><i class="fa fa-whatsapp end-ion"  aria-hidden="true"></i></a>
-		<a href="https://www.instagram.com/prisasoftsolutions/" target="_blank"><i class="fa fa-instagram end-ion"aria-hidden="true"></i></a>
-		
-		<a href="tel:<?php echo $phone;?>"><i class="fa fa-phone end-ion"  aria-hidden="true"></i></a>
-                </div>
-                    </section>
-
-				</div>                
-			</div>
-		</div><!-- =============== container end =============== -->
-	</section>
-    <!-- Footer -->
-    <footer id="footer">
-	<!-- =============== container =============== -->
-    <div class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> Copyright PrisaSoftSoluitons. Designed & Developed By PrisaSoftSoluitons</div>
-	</footer>
-    <!-- =============== jQuery =============== -->
-    <script src="js/jquery.js"></script>
-    <!-- =============== Bootstrap Core JavaScript =============== -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- =============== Plugin JavaScript =============== -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
-    <!-- =============== Custom Theme JavaScript =============== -->
-    <script src="js/creative.js"></script>
-    <!-- =============== owl carousel =============== -->
-    <script src="owl-carousel/owl.carousel.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#owl-demo").owlCarousel({
-                autoPlay: 3000,
-                items: 3,
-                itemsDesktop: [1199, 3],
-                itemsDesktopSmall: [979, 3]
-            });
-
-        });
-    </script>
-	<script>
- $(document).ready(function() {
-           $('#myform').on('submit',function(){
-alert("hello");
-         var name = $("#name").val();
-		  var email = $("#email").val();
-			var message = $("#message").val();
-			alert(name+" | "+email|+" | "+message );
-			 if(name =='' ){
-			$('#name').css("border","2px solid red");}
-             else  if(email =='' ){
-		$('#email').css("border","2px solid pink");
-		}else if(message =='' ){
-			$('#message').css("border","2px solid red");}
-			
-		else{
-		$.post("insert.php",{name:name,email:email,message:message},
-			function(data){
-				alert(data);
-				if(data=='1'){
-					alert('successfully inserted');
-				}else{
-					alert('Fail!! Please Try Again ');
-				}
-				
-			});		
-		}
-	});
+<meta name="address" content="Prisa Soft Solutions  (India) Raipur " />
+<meta name="copyright" content=" Prisa Soft Solution  -  Best  Web Designing, Digital Marketing & Branding Company in India" />
+<meta name="distribution" content="global" />
+<meta name="language" content="english" />
+<meta name="rating" content="general" />
+<meta name="subject" content="Web Designing,Website Desiging, Digital Marketing and Branding Company in India, Raipur" />
+<meta name="robots" content="ALL" />
+<meta name="revisit-after" content="2 days" />
+<meta name="generator" content="http://prisasoftsolutions.com/" />
+<meta name="author" content="prisasoftsolutions " />
+<meta name="og:type" content="article" />
+<meta name="og:title" content="Website designing company in Raipur, Best SEO Web Development Company India, Raipur" />
+<meta name="og:image" content="http://prisasoftsolutions.com/assets/images/prisa_logo.png" />
+<meta name="og:site_name" content="prisasoftsolutions" />
+<meta name="og:description" content="prisasoftsolutions-  Best Website Designing Company in Raipur, Leading Web Development, SEO, Digital Marketing & Branding Company India" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:desc" content="prisasoftsolutions-  Best Website Designing Company in Raipur, Leading Web Development, SEO, Digital Marketing & Branding Company India" />
+<meta name="twitter:title" content="Website designing company in Raipur, Best SEO Web Development Company India" />
 	
-});
+    <meta name="abstract" content="Website designing company in Raipur, Best SEO Web Development Company India" />
+	
+    <meta name="Classification" content="prisasoftsolutions 
+	Best Website Designing Company in Raipur, Leading Web Development, SEO, Digital Marketing & Branding Company India" />
+    <meta name="dc.source" content="prisasoftsolutions.com" />
+	
+    <meta name="dc.title" content="Website designing company in Raipur, Best SEO Web Development Company India" />
+	
+    <meta name="dc.keywords" content="Top Website designing company,Top seo service agency Best Website designing company,  SEO Company in Raipur,Best Digital Marketing solution service ,Social media services,logo design,brochure,bulk sms" />
+	
+    <meta name="dc.subject" content="prisasoftsolutions  " />
+	
+    <meta name="dc.description" content="prisa soft solutions  -  Best Website Designing Company in Raipur, Leading Web Development, SEO, Digital Marketing & Branding Company India" />
 
-</script>
-<script>
-    $(document).ready(function(){
-        $("#myModal").modal('show');
-    });
-</script>
-</body>
+
+
+		
+		<?php include('include/head.php');?>
+	</head>
+	<body id="bg">
+	
+		<!-- Boxed Layout -->
+		<div id="page" class="site boxed-layout"> 
+		
+		<!-- Preloader 
+		<div class="preeloader">
+			<div class="preloader-spinner"></div>
+		</div>-->
+		<!--/ End Preloader -->
+	
+		
+		<?php include('include/header.php');?>
+		<!-- Hero Slider -->
+		<section class="hero-slider style1">
+			<div class="home-slider">
+				<!-- Single Slider -->
+				<div class="single-slider" style="background:#1a9f68;;">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7 col-md-8 col-12">
+								<div class="welcome-text"> 
+									<div class="hero-text"> 
+										<h4>We are always ready to help you</h4>
+										<h1 class="text-white">Website Design / Development
+</h1>
+										<div class="p-text ">
+											<p class="text-white">In need of revamping your existing website? Put your trust on PSS and see your website becoming easier to navigate, more interactive flaunting a perfect look and feel.
+
+</p>
+										</div>
+										<div class="button">
+											<a href="contact.php" class="bizwheel-btn theme-1 effect">Work with us</a>
+											<a href="services.php" class="bizwheel-btn theme-2 effect">Our Services</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+						<div class="col-lg-5 col-md-5 col-12 hidden-sm hidden-xs" style="margin-top:100px;">
+						
+					<img src="img/web.jpg" width="100%">
+						</div>
+						
+						</div>
+					</div>
+				</div>
+				<!--/ End Single Slider -->
+				<!-- Single Slider -->
+				<div class="single-slider" style="background:#f3a712;">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7 col-md-8 col-12">
+								<div class="welcome-text"> 
+									<div class="hero-text"> 
+										<h4>Your time is so important for us</h4>
+										<h1 class="text-white">Software Development
+</h1>
+										<div class="p-text">
+											<p class="text-white">We take the charge to make your business run, by taking the highest speed with the deft combination of customizing new technology.
+
+</p>
+										</div>
+										<div class="button">
+											<a href="about.php" class="bizwheel-btn theme-1 effect">Read More About Us</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-lg-5 col-md-5 col-12  hidden-sm hidden-xs">
+						<br />
+					<img src="img/dashbaord.png" width="100%">
+						</div>
+						
+						
+						</div>
+					</div>
+				</div>
+				<!--/ End Single Slider -->
+				<!-- Single Slider -->
+				<div class="single-slider" style="background:#1a9f68;">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7 col-md-8 col-12">
+								<div class="welcome-text"> 
+									<div class="hero-text"> 
+										<h4>Our experties are waiting for you</h4>
+										<h1 class="text-white">Digital Marketing
+ </h1>
+										<div class="p-text ">
+											<p class="text-white">Pss provides SEO, SEM,SMM, SMS Marketing and WhatsApp Marketing service focusing on brand Value. It is all about getting connected to people in a better way.
+
+</p>
+										</div>
+										<div class="button">
+											<a href="services.php" class="bizwheel-btn theme-2 effect">Our Services</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+								
+							<div class="col-lg-5 col-md-5 col-12  hidden-sm hidden-xs">
+						<br />
+					<img src="img/dg.png" width="100%">
+						</div>
+						
+						</div>
+					</div>
+				</div>
+				<!--/ End Single Slider -->
+			</div>
+		</section>
+		<!--/ End Hero Slider -->
+		
+		<!-- Features Area -->
+		<section class="features-area section-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Single Feature -->
+						<div class="single-feature">
+							<div class="icon-head"><i class="fa fa-podcast"></i></div>
+							<h4>Creative Design</h4>
+							<p> The various forms of enriched multimedia that should form a core part of your online presence and marketing strategy.</p>
+							<div class="button">
+								<a href="services.php" class="bizwheel-btn"><i class="fa fa-arrow-circle-o-right"></i> Learn More</a>
+							</div>
+						</div>
+						<!--/ End Single Feature -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Single Feature -->
+						<div class="single-feature">
+							<div class="icon-head"><i class="fa fa-podcast"></i></div>
+							<h4>Quality Service</h4>
+							<p> We are provide best feature our service.And we will try to  make your work easy.
+						 </p>
+						 <br>
+							<div class="button">
+								<a href="services.php" class="bizwheel-btn"><i class="fa fa-arrow-circle-o-right"></i> Learn More</a>
+							</div>
+						</div>
+						<!--/ End Single Feature -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Single Feature -->
+						<div class="single-feature active">
+							<div class="icon-head"><i class="fa fa-podcast"></i></div>
+							<h4>On-time Delivery</h4>
+							<p>We will provide to best your online service. And we send your service in minimum time</p>
+							<br>
+							<div class="button">
+								<a href="services.php" class="bizwheel-btn"><i class="fa fa-arrow-circle-o-right"></i> Learn More</a>
+							</div>
+						</div>
+						<!--/ End Single Feature -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Single Feature -->
+						<div class="single-feature">
+							<div class="icon-head"><i class="fa fa-podcast"></i></div>
+							<h4>Technical Support</h4>
+							<p>if you have to any problem in our service.Then we will solve your problem anytime.</p>
+							<br>
+							<div class="button">
+								<a href="services.php" class="bizwheel-btn"><i class="fa fa-arrow-circle-o-right"></i> Learn More</a>
+							</div>
+						</div>
+						<!--/ End Single Feature -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Features Area -->
+		
+		
+		<div id="about" class="about-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="left-image wow fadeIn animated" data-wow-duration="1s" data-wow-delay="0.2s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
+            <img src="img/about-left-image.png" alt="prisa softsolution">
+          </div>
+        </div>
+        <div class="col-lg-8 align-self-center">
+          <div class="services">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="item wow fadeIn animated" data-wow-duration="1s" data-wow-delay="0.9s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.9s; -moz-animation-delay: 0.9s; animation-delay: 0.9s;">
+                  <div class="icon">
+                    <img src="img/service-icon-03.png" alt="prisa softsolution">
+                  </div>
+                  <div class="right-text">
+                    <h4>Web Analytics</h4>
+                    <p>Web analytics is the collection, reporting, and analysis of website data.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item wow fadeIn animated" data-wow-duration="1s" data-wow-delay="0.7s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.7s; -moz-animation-delay: 0.7s; animation-delay: 0.7s;">
+                  <div class="icon">
+                    <img src="img/service-icon-02.png" alt="prisa softsolutionprisa softsolution">
+                  </div>
+                  <div class="right-text">
+                    <h4>Data Reporting</h4>
+                    <p>Data reporting is the process of collecting and formatting raw data and translating it into a digestible format to assess the ongoing performance of your organization. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item wow fadeIn animated" data-wow-duration="1s" data-wow-delay="0.9s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.9s; -moz-animation-delay: 0.9s; animation-delay: 0.9s;">
+                  <div class="icon">
+                    <img src="img/service-icon-03.png" alt="prisa softsolution">
+                  </div>
+                  <div class="right-text">
+                    <h4>Digital Analytics</h4>
+                    <p>The process of analyzing digital data from various sources like websites, mobile applications, among others.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item wow fadeIn animated" data-wow-duration="1s" data-wow-delay="1.1s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 1.1s; -moz-animation-delay: 1.1s; animation-delay: 1.1s;">
+                  <div class="icon">
+                    <img src="img/service-icon-04.png" alt="Best digital marketing services prisa softsolution">
+                  </div>
+                  <div class="right-text">
+                    <h4>SEO Suggestions</h4>
+                    <p>SEO analysis is the process of closely examining a website to gain a better understanding of how well the site has been optimized and what can be done to help the site improve. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div id="portfolio" class="our-portfolio section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading  wow bounceIn animated" data-wow-duration="1s" data-wow-delay="0.2s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
+            <h2>See What Our Agency <em>Offers</em> &amp; What We <span>Provide</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-sm-6">
+          <a href="#">
+            <div class="item wow bounceInUp animated" data-wow-duration="1s" data-wow-delay="0.3s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">
+              <div class="hidden-content">
+                <h4>SEO Analysis</h4>
+                <p>SEO analysis is the process of closely examining a website to gain a better understanding, to help the site improve.</p>
+              </div>
+              <div class="showed-content">
+                <img src="img/portfolio-image.png" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <a href="#">
+            <div class="item wow bounceInUp animated" data-wow-duration="1s" data-wow-delay="0.4s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.4s; -moz-animation-delay: 0.4s; animation-delay: 0.4s;">
+              <div class="hidden-content">
+                <h4>Website Reporting</h4>
+                <p>Static &amp; Dynamic website design development is our specialization.</p>
+              </div>
+              <div class="showed-content">
+                <img src="img/portfolio-image.png" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <a href="#">
+            <div class="item wow bounceInUp animated" data-wow-duration="1s" data-wow-delay="0.5s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; animation-delay: 0.5s;">
+              <div class="hidden-content">
+                <h4>Performance Tests</h4>
+                <p>Web Performance Monitoring is the practice of analyzing and monitoring websites.</p>
+              </div>
+              <div class="showed-content">
+                <img src="img/portfolio-image.png" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <a href="#">
+            <div class="item wow bounceInUp animated" data-wow-duration="1s" data-wow-delay="0.6s" style="visibility: visible;-webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s;-webkit-animation-delay: 0.6s; -moz-animation-delay: 0.6s; animation-delay: 0.6s;">
+              <div class="hidden-content">
+                <h4>Bulk Sms</h4>
+                <p>Bulk messaging is the dissemination of large numbers of SMS messages for delivery to mobile phone terminals</p>
+              </div>
+              <div class="showed-content">
+                <img src="img/portfolio-image.png" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+		<!-- Services -->
+		<section class="services section-bg section-space" style="display:none;">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="section-title style2 text-center">
+							<div class="section-top">
+								<h1><span>Creative</span><b>Service We Provide</b></h1><h4>We provide quality service &amp; support..</h4>
+							</div>
+							<div class="section-bottom">
+								<div class="text-style-two">
+									<p>Aliquam Sodales Justo Sit Amet Urna Auctor Scelerisquinterdum Leo Anet Tempus Enim Esent Egetis Hendrerit Vel Nibh Vitae Ornar Sem Velit Aliquam</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-12">
+						<!-- Single Service -->
+						<div class="single-service">
+							<div class="service-head">
+								<img src="https://via.placeholder.com/555x410" alt="#">
+								<div class="icon-bg"><i class="fa fa-handshake-o"></i></div>
+							</div>
+							<div class="service-content">
+								<h4><a href="service-business.html">Business Strategy</a></h4>
+								<p>Cras venenatis, purus sit amet tempus mattis, justo nisi facilisis metus, in tempus ipsum ipsum eu ipsum. Class aptent taciti</p>
+								<a class="btn" href="service-business.html"><i class="fa fa-arrow-circle-o-right"></i>View Service</a>
+							</div>
+						</div>
+						<!--/ End Single Service -->
+					</div>
+					<div class="col-lg-4 col-md-4 col-12">
+						<!-- Single Service -->
+						<div class="single-service">
+							<div class="service-head">
+								<img src="https://via.placeholder.com/555x410" alt="#">
+								<div class="icon-bg"><i class="fa fa-html5"></i></div>
+							</div>
+							<div class="service-content">
+								<h4><a href="service-develop.html">Web Development</a></h4>
+								<p>Cras venenatis, purus sit amet tempus mattis, justo nisi facilisis metus, in tempus ipsum ipsum eu ipsum. Class aptent taciti</p>
+								<a class="btn" href="service-develop.html"><i class="fa fa-arrow-circle-o-right"></i>View Service</a>
+							</div>
+						</div>
+						<!--/ End Single Service -->
+					</div>
+					<div class="col-lg-4 col-md-4 col-12">
+						<!-- Single Service -->
+						<div class="single-service">
+							<div class="service-head">
+								<img src="https://via.placeholder.com/555x410" alt="#">
+								<div class="icon-bg"><i class="fa fa-cube"></i></div>
+							</div>
+							<div class="service-content">
+								<h4><a href="service-market.html">Market Research</a></h4>
+								<p>Cras venenatis, purus sit amet tempus mattis, justo nisi facilisis metus, in tempus ipsum ipsum eu ipsum. Class aptent taciti</p>
+								<a class="btn" href="service-market.html"><i class="fa fa-arrow-circle-o-right"></i>View Service</a>
+							</div>
+						</div>
+						<!--/ End Single Service -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Services -->
+		
+		
+
+		<!-- Call To Action -->
+		<section class="call-action overlay" style="background-image:url('https://via.placeholder.com/1500x300')">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-9 col-12">
+						<div class="call-inner">
+							<h2>Brand Products &amp; Creativity is our Fashion</h2>
+							<p>ehicula maximus velit. Morbi non tincidunt purus, a hendrerit nisi. Vivamus elementum</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-12">
+						<div class="button">
+							<a href="services.php" class="bizwheel-btn">Our Services</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Call to action -->
+		
+		<!-- Portfolio -->
+		<section class="portfolio section-space" style="display:none;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12">
+						<div class="section-title default text-center">
+							<div class="section-top">
+								<h1><span>Project</span><b>Our Works</b></h1>
+							</div>
+							<div class="section-bottom">
+								<div class="text">
+									<p>Lorem Ipsum Dolor Sit Amet, Conse Ctetur Adipiscing Elit, Sed Do Eiusmod Tempor Ares Incididunt Utlabore. Dolore Magna Ones Baliqua</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="portfolio-menu">
+							<!-- Portfolio Nav -->
+							<ul id="portfolio-nav" class="portfolio-nav tr-list list-inline cbp-l-filters-work">
+								<li data-filter="*" class="cbp-filter-item active">All</li>
+								<li data-filter=".animation" class="cbp-filter-item">Animation</li>
+								<li data-filter=".branding" class="cbp-filter-item">Branding</li>
+								<li data-filter=".business" class="cbp-filter-item">Business</li>
+								<li data-filter=".consulting" class="cbp-filter-item">Consulting</li>
+								<li data-filter=".marketing" class="cbp-filter-item">Marketing</li>
+								<li data-filter=".seo" class="cbp-filter-item">SEO</li>
+							</ul>
+							<!--/ End Portfolio Nav -->
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="portfolio-main">
+							<div id="portfolio-item" class="portfolio-item-active">
+								<div class="cbp-item business animation">
+									<!-- Single Portfolio -->
+									<div class="single-portfolio">
+										<div class="portfolio-head overlay">
+											<img src="https://via.placeholder.com/600x415" alt="#">
+											<a class="more" href="portfolio-single.html"><i class="fa fa-long-arrow-right"></i></a>
+										</div>
+										<div class="portfolio-content">
+											<h4><a href="portfolio-single.html">Creative Marketing</a></h4>
+											<p>Business, Aniamtion</p>
+										</div>
+									</div>
+									<!--/ End Single Portfolio -->
+								</div>
+								<div class="cbp-item seo consulting">
+									<!-- Single Portfolio -->
+									<div class="single-portfolio">
+										<div class="portfolio-head overlay">
+											<img src="https://via.placeholder.com/600x415" alt="#">
+											<a class="more" href="portfolio-single.html"><i class="fa fa-long-arrow-right"></i></a>
+										</div>
+										<div class="portfolio-content">
+											<h4><a href="portfolio-single.html">Creative Marketing</a></h4>
+											<p>Seo, Consulting</p>
+										</div>
+									</div>
+									<!--/ End Single Portfolio -->
+								</div>
+								<div class="cbp-item marketing seo">
+									<!-- Single Portfolio -->
+									<div class="single-portfolio">
+										<div class="portfolio-head overlay">
+											<img src="https://via.placeholder.com/600x415" alt="#">
+											<a class="more" href="portfolio-single.html"><i class="fa fa-long-arrow-right"></i></a>
+										</div>
+										<div class="portfolio-content">
+											<h4><a href="portfolio-single.html">Creative Marketing</a></h4>
+											<p>Marketing, SEO</p>
+										</div>
+									</div>
+									<!--/ End Single Portfolio -->
+								</div>
+								<div class="cbp-item animation branding">
+									<!-- Single Portfolio -->
+									<div class="single-portfolio">
+										<div class="portfolio-head overlay">
+											<img src="https://via.placeholder.com/600x415" alt="#">
+											<a class="more" href="portfolio-single.html"><i class="fa fa-long-arrow-right"></i></a>
+										</div>
+										<div class="portfolio-content">
+											<h4><a href="portfolio-single.html">Creative Marketing</a></h4>
+											<p>Animation, Branding</p>
+										</div>
+									</div>
+									<!--/ End Single Portfolio -->
+								</div>
+								<div class="cbp-item branding consulting">
+									<!-- Single Portfolio -->
+									<div class="single-portfolio">
+										<div class="portfolio-head overlay">
+											<img src="https://via.placeholder.com/600x415" alt="#">
+											<a class="more" href="portfolio-single.html"><i class="fa fa-long-arrow-right"></i></a>
+										</div>
+										<div class="portfolio-content">
+											<h4><a href="portfolio-single.html">Creative Marketing</a></h4>
+											<p>Branding, Consulting</p>
+										</div>
+									</div>
+									<!--/ End Single Portfolio -->
+								</div>
+								<div class="cbp-item business marketing">
+									<!-- Single Portfolio -->
+									<div class="single-portfolio">
+										<div class="portfolio-head overlay">
+											<img src="https://via.placeholder.com/600x415" alt="#">
+											<a class="more" href="portfolio-single.html"><i class="fa fa-long-arrow-right"></i></a>
+										</div>
+										<div class="portfolio-content">
+											<h4><a href="portfolio-single.html">Creative Marketing</a></h4>
+											<p>Business</p>
+										</div>
+									</div>
+									<!--/ End Single Portfolio -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Portfolio -->
+		
+		<!-- Testimonials -->
+		<section class="testimonials section-space" style="display:none; background-image:url('https://via.placeholder.com/1500x700')">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-9 col-12">
+						<div class="section-title default text-left">
+							<div class="section-top">
+								<h1><b>Our Satisfied Clients</b></h1>
+							</div>
+							<div class="section-bottom">
+								<div class="text"><p>some of our great clients and their review</p></div>
+							</div>
+						</div>
+						<div class="testimonial-inner">
+							<div class="testimonial-slider">
+								<!-- Single Testimonial -->
+								<div class="single-slider">
+									<ul class="star-list">
+										<li><i class="fa fa-star"></i></li>
+										<li><i class="fa fa-star"></i></li>
+										<li><i class="fa fa-star"></i></li>
+										<li><i class="fa fa-star"></i></li>
+										<li><i class="fa fa-star"></i></li>
+									</ul>
+									<p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the <strong>industry's standard</strong> dummy text ever sinsimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+									<!-- Client Info -->
+									<div class="t-info">
+										<div class="t-left">
+											<div class="client-head"><img src="https://via.placeholder.com/70x70" alt="#"></div>
+											<h2>Julias Dien <span>CEO / Creative IT</span></h2>
+										</div>
+										<div class="t-right">
+											<div class="quote"><i class="fa fa-quote-right"></i></div>
+										</div>
+									</div>
+								</div>
+								<!-- / End Single Testimonial -->
+								<!-- Single Testimonial -->
+								<div class="single-slider">
+									<ul class="star-list">
+										<li><i class="fa fa-star"></i></li>
+										<li><i class="fa fa-star"></i></li>
+										<li><i class="fa fa-star"></i></li>
+										<li><i class="fa fa-star"></i></li>
+										<li><i class="fa fa-star"></i></li>
+									</ul>
+									<p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the <strong>industry's standard</strong> dummy text ever sinsimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+									<!-- Client Info -->
+									<div class="t-info">
+										<div class="t-left">
+											<div class="client-head"><img src="https://via.placeholder.com/70x70" alt="#"></div>
+											<h2>Buman Panama <span>Founder, Jolace Group</span></h2>
+										</div>
+										<div class="t-right">
+											<div class="quote"><i class="fa fa-quote-right"></i></div>
+										</div>
+									</div>
+								</div>
+								<!-- / End Single Testimonial -->
+								<!-- Single Testimonial -->
+								<div class="single-slider">
+									<ul class="star-list">
+										<li><i class="fa fa-star"></i></li>
+										<li><i class="fa fa-star"></i></li>
+										<li><i class="fa fa-star"></i></li>
+										<li><i class="fa fa-star"></i></li>
+										<li><i class="fa fa-star"></i></li>
+									</ul>
+									<p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the <strong>industry's standard</strong> dummy text ever sinsimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>	
+									<!-- Client Info -->
+									<div class="t-info">
+										<div class="t-left">
+											<div class="client-head"><img src="https://via.placeholder.com/70x70" alt="#"></div>
+											<h2>Donald Bonam <span>Developer, Soft IT</span></h2>
+										</div>
+										<div class="t-right">
+											<div class="quote"><i class="fa fa-quote-right"></i></div>
+										</div>
+									</div>
+								</div>
+								<!-- / End Single Testimonial -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Testimonials -->
+		
+		<!-- Counterup -->
+		<section class="counterup" style="display:none;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Single Counterup -->
+						<div class="single-counter">
+							<div class="icon"><i class="fa fa-book"></i></div>
+							<div class="conter-content">
+								<div class="counter-head">
+									<h3><b class="number">105</b><span>K</span></h3>
+								</div>
+								<p>Complete Works</p>
+							</div>
+						</div>
+						<!--/ End Single Counterup -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Single Counterup -->
+						<div class="single-counter">
+							<div class="icon"><i class="fa fa-users"></i></div>
+							<div class="conter-content">
+								<div class="counter-head">
+									<h3><b class="number">5999</b><span>+</span></h3>
+								</div>
+								<p>Happy clients</p>
+							</div>
+						</div>
+						<!--/ End Single Counterup -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Single Counterup -->
+						<div class="single-counter">
+							<div class="icon"><i class="fa fa-life-ring"></i></div>
+							<div class="conter-content">
+								<div class="counter-head">
+									<h3><b class="number">5988</b><span>+</span></h3>
+								</div>
+								<p>Support Ticket</p>
+							</div>
+						</div>
+						<!--/ End Single Counterup -->
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						<!-- Single Counterup -->
+						<div class="single-counter">
+							<div class="icon"><i class="fa fa-fire"></i></div>
+							<div class="conter-content">
+								<div class="counter-head">
+									<h3><b class="number">8569</b><span>+</span></h3>
+								</div>
+								<p>Company Work</p>
+							</div>
+						</div>
+						<!--/ End Single Counterup -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Counterup -->
+		
+		<!-- Our Team -->
+		<section class="team section-bg section-space">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="section-title  style2 text-center">
+							<div class="section-top">
+								<h1><span>Services</span><b>Our Services</b></h1><h4>Our experts leaders are waiting for you.</h4>
+							</div>
+							<div class="section-bottom">
+								<div class="text-style-two">
+									<p>Aliquam Sodales Justo Sit Amet Urna Auctor Scelerisquinterdum Leo Anet Tempus Enim Esent Egetis Hendrerit Vel Nibh Vitae Ornar Sem Velit Aliquam</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="team-slider">
+					<div class="single-slider">
+						<!-- Single Team -->
+						<div class="single-team">
+							<div class="team-head">
+								<img src="img/img.jpg" alt="#">
+									<?php include('socialicons.php');?>
+							</div>
+							<div class="t-content">
+								<div class="team-arrow">
+									<a><i class="fa fa-angle-up"></i></a>
+								</div>
+								<div class="content-inner">
+									<h4 class="name"><a href="#">Website Design/Development</a></h4>
+									
+								</div>
+							</div>
+						</div>
+						<!--/ End Single Team -->
+					</div>
+					<div class="single-slider">
+						<!-- Single Team -->
+						<div class="single-team">
+							<div class="team-head">
+								<img src="img/img2.jpg" alt="#">
+								<?php include('socialicons.php');?>	
+							</div>
+							<div class="t-content">
+								<div class="team-arrow">
+									<a><i class="fa fa-angle-up"></i></a>
+								</div>
+								<div class="content-inner">
+									<h4 class="name"><a href="#">Google Business Support</a></h4>
+									
+								</div>
+							</div>
+						</div>
+						<!--/ End Single Team -->
+					</div>
+					<div class="single-slider">
+						<!-- Single Team -->
+						<div class="single-team">
+							<div class="team-head">
+								<img src="https://i.pinimg.com/736x/0b/ac/f8/0bacf8768fb39c28b0cd0711d57fbbb8.jpg" alt="#">
+								<?php include('socialicons.php');?>	
+							</div>
+							<div class="t-content">
+								<div class="team-arrow">
+									<a><i class="fa fa-angle-up"></i></a>
+								</div>
+								<div class="content-inner">
+									<h4 class="name"><a href="#">Software Development</a></h4>
+									
+								</div>
+							</div>
+						</div>
+						<!--/ End Single Team -->
+					</div>
+					<div class="single-slider">
+						<!-- Single Team -->
+						<div class="single-team">
+							<div class="team-head">
+								<img src="img/dg.jpg" alt="#">
+								<?php include('socialicons.php');?>	
+							</div>
+							<div class="t-content">
+								<div class="team-arrow">
+									<a><i class="fa fa-angle-up"></i></a>
+								</div>
+								<div class="content-inner">
+									<h4 class="name"><a href="#">Digital Marketing</a></h4>
+									
+								</div>
+							</div>
+						</div>
+						<!--/ End Single Team -->
+					</div>
+					<div class="single-slider">
+						<!-- Single Team -->
+						<div class="single-team">
+							<div class="team-head">
+								<img src="img/bulk.jpg" alt="#">
+								<?php include('socialicons.php');?>		
+							</div>
+							<div class="t-content">
+								<div class="team-arrow">
+									<a><i class="fa fa-angle-up"></i></a>
+								</div>
+								<div class="content-inner">
+									<h4 class="name"><a href="#">Bulk SMS</a></h4>
+									
+								</div>
+							</div>
+						</div>
+						<!--/ End Single Team -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Team -->
+		
+		<!-- Latest Blog -->
+		<section class="latest-blog section-space" style="display:none;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12">
+						<div class="section-title default text-center">
+							<div class="section-top">
+								<h1><span>Latest</span><b> Published</b></h1>
+							</div>
+							<div class="section-bottom">
+								<div class="text">
+									<p>Lorem Ipsum Dolor Sit Amet, Conse Ctetur Adipiscing Elit, Sed Do Eiusmod Tempor Ares Incididunt Utlabore. Dolore Magna Ones Baliqua</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="blog-latest blog-latest-slider">
+							<div class="single-slider">
+								<!-- Single Blog -->
+								<div class="single-news ">
+									<div class="news-head overlay">
+										<span class="news-img" style="background-image:url('https://via.placeholder.com/700x530')"></span>
+										<a href="#" class="bizwheel-btn theme-2">Read more</a>
+									</div>
+									<div class="news-body">
+										<div class="news-content">
+											<h3 class="news-title"><a href="blog-single.html">We Provide you Best &amp; Creative Consulting Service</a></h3>
+											<div class="news-text"><p>Sed tempus pulvinar augue ut euismod. Donec a nisi volutpat, dignissim mauris eget. Quisque vitae nunc sit amet eros pellentesque tempus at sit amet sem. Maecenas feugiat mauris</p></div>
+											<ul class="news-meta">
+												<li class="date"><i class="fa fa-calendar"></i>April 2020</li>
+												<li class="view"><i class="fa fa-comments"></i>0</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--/ End Single Blog -->
+							</div>
+							<div class="single-slider">
+								<!-- Single Blog -->
+								<div class="single-news ">
+									<div class="news-head overlay">
+										<span class="news-img" style="background-image:url('https://via.placeholder.com/700x530')"></span>
+										<a href="#" class="bizwheel-btn theme-2">Read more</a>
+									</div>
+									<div class="news-body">
+										<div class="news-content">
+											<h3 class="news-title"><a href="blog-single.html">We Provide you Best &amp; Creative Consulting Service</a></h3>
+											<div class="news-text"><p>Sed tempus pulvinar augue ut euismod. Donec a nisi volutpat, dignissim mauris eget. Quisque vitae nunc sit amet eros pellentesque tempus at sit amet sem. Maecenas feugiat mauris</p></div>
+											<ul class="news-meta">
+												<li class="date"><i class="fa fa-calendar"></i>April 2020</li>
+												<li class="view"><i class="fa fa-comments"></i>0</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--/ End Single Blog -->
+							</div>
+							<div class="single-slider">
+								<!-- Single Blog -->
+								<div class="single-news ">
+									<div class="news-head overlay">
+										<span class="news-img" style="background-image:url('https://via.placeholder.com/700x530')"></span>
+										<a href="#" class="bizwheel-btn theme-2">Read more</a>
+									</div>
+									<div class="news-body">
+										<div class="news-content">
+											<h3 class="news-title"><a href="blog-single.html">We Provide you Best &amp; Creative Consulting Service</a></h3>
+											<div class="news-text"><p>Sed tempus pulvinar augue ut euismod. Donec a nisi volutpat, dignissim mauris eget. Quisque vitae nunc sit amet eros pellentesque tempus at sit amet sem. Maecenas feugiat mauris</p></div>
+											<ul class="news-meta">
+												<li class="date"><i class="fa fa-calendar"></i>April 2020</li>
+												<li class="view"><i class="fa fa-comments"></i>0</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--/ End Single Blog -->
+							</div>
+							<div class="single-slider">
+								<!-- Single Blog -->
+								<div class="single-news ">
+									<div class="news-head overlay">
+										<span class="news-img" style="background-image:url('https://via.placeholder.com/700x530')"></span>
+										<a href="#" class="bizwheel-btn theme-2">Read more</a>
+									</div>
+									<div class="news-body">
+										<div class="news-content">
+											<h3 class="news-title"><a href="blog-single.html">We Provide you Best &amp; Creative Consulting Service</a></h3>
+											<div class="news-text"><p>Sed tempus pulvinar augue ut euismod. Donec a nisi volutpat, dignissim mauris eget. Quisque vitae nunc sit amet eros pellentesque tempus at sit amet sem. Maecenas feugiat mauris</p></div>
+											<ul class="news-meta">
+												<li class="date"><i class="fa fa-calendar"></i>April 2020</li>
+												<li class="view"><i class="fa fa-comments"></i>0</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--/ End Single Blog -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Latest Blog -->
+		
+		<!-- Client Area -->
+		<div class="clients section-bg" style="display:none;">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="partner-slider">
+							<!-- Single client -->
+							<div class="single-slider">
+								<div class="single-client">
+									<a href="#" target="_blank"><img src="img/client/client-1.png" alt="#"></a>
+								</div>
+							</div>
+							<!--/ End Single client -->
+							<!-- Single client -->
+							<div class="single-slider">
+								<div class="single-client">
+									<a href="#" target="_blank"><img src="img/client/client-2.png" alt="#"></a>
+								</div>
+							</div>
+							<!--/ End Single client -->
+							<!-- Single client -->
+							<div class="single-slider">
+								<div class="single-client">
+									<a href="#" target="_blank"><img src="img/client/client-3.png" alt="#"></a>
+								</div>
+							</div>
+							<!--/ End Single client -->
+							<!-- Single client -->
+							<div class="single-slider">
+								<div class="single-client">
+									<a href="#" target="_blank"><img src="img/client/client-4.png" alt="#"></a>
+								</div>
+							</div>
+							<!--/ End Single client -->
+							<!-- Single client -->
+							<div class="single-slider">
+								<div class="single-client">
+									<a href="#" target="_blank"><img src="img/client/client-5.png" alt="#"></a>
+								</div>
+							</div>
+							<!--/ End Single client -->
+							<!-- Single client -->
+							<div class="single-slider">
+								<div class="single-client">
+									<a href="#" target="_blank"><img src="img/client/client-6.png" alt="#"></a>
+								</div>
+							</div>
+							<!--/ End Single client -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Client Area -->
+		
+	<?php include('include/footer.php');?>
+		
+		
+	</body>
 </html>
